@@ -31,6 +31,9 @@ body {
     .content a:hover {
       color: white;
       background-color: #0d5e5f; }
+  .content img {
+    width: 10%;
+    cursor: pointer; }
 
 .popup {
   position: fixed;
