@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh; }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+  .content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 17px 72px;
+    margin: 15px 0;
+    border-radius: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold; }
+    .content a:hover {
+      color: white;
+      background-color: #0d5e5f; }
+
+.popup {
+  position: fixed;
+  display: none;
+  background-color: white;
+  width: 30%;
+  height: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); }
+  .popup h4 {
+    text-align: center;
+    color: #0d5e5f;
+    padding-top: 30px;
+    font-size: 24px; }
+  .popup-close {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none; }
+  .popup p {
+    padding: 20px;
+    line-height: 150%; }
+  .popup form {
+    width: 50%;
+    margin: 50px auto; }
+    .popup form label {
+      display: inline-block;
+      width: 20px; }
+      .popup form label.error {
+        color: red;
+        display: block;
+        width: 100%; }
+    .popup form input {
+      width: 90%;
+      height: 35px;
+      margin: 10px 0 20px;
+      border: none;
+      border-bottom: 1px solid #c0bdbd;
+      outline: none;
+      font-size: 16px; }
+      .popup form input::placeholder {
+        font-size: 14px;
+        color: grey; }
+      .popup form input:focus, .popup form input:hover {
+        border-bottom: 1px solid black; }
+      .popup form input.error {
+        border-bottom: 1px solid red; }
+    .popup form button {
+      padding: 15px 30px;
+      margin: 0 auto;
+      display: block;
+      background-color: #82c5c3;
+      border: none;
+      color: white;
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 50px;
+      outline: none;
+      font-size: 16px;
+      cursor: pointer; }
+      .popup form button i {
+        padding-left: 5px; }
+      .popup form button:hover {
+        background-color: white;
+        border: 1px solid #82c5c3;
+        color: #82c5c3; }

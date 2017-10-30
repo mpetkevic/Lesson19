@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 17px 72px;
+        margin: 15px 0;
+        border-radius: 60px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: bold;
+        
+        &:hover {
+            color: white;
+            background-color: #0d5e5f;
+        }
+    }
+}
+
+.popup {
+    position: fixed;
+    display: none;
+    background-color: white;
+    width: 30%;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    h4 {
+        text-align: center;
+        color: #0d5e5f;
+        padding-top: 30px;
+        font-size: 24px;
+    }
+
+    &-close {
+        position: absolute;
+        top: 2%;
+        right: 3%;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    p {
+        padding: 20px;
+        line-height: 150%;
+    }
+
+    form {
+        
+        width: 50%;
+        margin: 50px auto;
+
+        label {
+            display: inline-block;
+            width: 20px;
+
+            &.error {
+                color: red;
+                display: block;
+                width: 100%;
+            }
+        }
+
+        input {
+            width: 90%;
+            height: 35px;
+            margin: 10px 0 20px;
+            border: none;
+            border-bottom: 1px solid rgb(192, 189, 189);
+            outline: none;
+            font-size: 16px;
+
+            &::placeholder {
+                font-size: 14px;
+                color: grey;
+            }
+
+            &:focus, &:hover {
+                border-bottom: 1px solid black;
+            }
+
+            &.error {
+                border-bottom: 1px solid red;
+            }
+        }
+
+        button {
+            padding: 15px 30px;
+            margin: 0 auto;
+            display: block;
+            background-color: #82c5c3;
+            border: none;
+            color: white;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 50px;
+            outline: none;
+            font-size: 16px;
+            cursor: pointer;
+            
+            i {
+                padding-left: 5px;
+            }
+
+            &:hover {
+                background-color: white;
+                border: 1px solid #82c5c3;
+                color: #82c5c3;
+            }
+        }
+    }
+}
